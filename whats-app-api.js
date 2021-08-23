@@ -19,6 +19,8 @@ module.exports = class {
 
       const page = await browser.newPage()
       
+      await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3641.0 Safari/537.36')
+      
       const sessions = fs.existsSync(path.join(__dirname, '.appstate.json')) ? JSON.parse(fs.readFileSync(path.join(__dirname, '.appstate.json'), 'utf8')) : null;
         
         
