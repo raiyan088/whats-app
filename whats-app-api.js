@@ -37,8 +37,8 @@ module.exports = class {
             waitUntil: 'networkidle2'
         })
         
-        await page.waitForSelector('[title="Raiyan Skito"]');
-        await page.click('[title="Raiyan Skito"]')
+        await page.waitForSelector('[title="Ma"]');
+        await page.click('[title="Ma"]')
         
         console.log('Listioning....')
         
